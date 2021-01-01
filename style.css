@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	overflow-y: hidden;
+	height: 100%;
+}
+
+.main {
+	color: yellow;
+	height: 100vh;
+	width: 100%;
+	opacity: 0.7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+}
+
+h1 {
+	margin-bottom: 1rem;
+}
+
+h2 {
+	word-spacing: 5px;
+	margin-bottom: 1rem;
+	font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+.main .grid {
+	font-size: 1.5rem;
+}
+.color_anime {
+	animation: mymove 0.5s infinite ease-in-out;
+}
+
+@keyframes mymove {
+	0% {
+		color: #eb4034;
+	}
+	20% {
+		color: #57fc83;
+	}
+	40% {
+		color: #9ab95b;
+	}
+	60% {
+		color: #38f1cc;
+	}
+	80% {
+		color: #f7bb3b;
+	}
+	100% {
+		color: #97d3f3;
+	}
+}
